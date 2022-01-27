@@ -1,4 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'poppins-medium'; font-size: 100%;}
+@font-face {
+  font-family: 'FuzzyBubbles';
+  src: url(assets/sources/FuzzyBubbles-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'poppins-bold';
+  src: url(assets/sources/Poppins-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'poppins-bold-italic';
+  src: url(assets/sources/Poppins-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'poppins-medium';
+  src: url(assets/sources/Poppins-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'poppins-medium-italic';
+  src: url(assets/sources/Poppins-MediumItalic.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}

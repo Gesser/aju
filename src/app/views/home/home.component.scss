@@ -1,23 +1,17 @@
-.logotipo {
+/* .logotipo {
   margin-left: 150px;
   width: 120px;
-  //height: 90px;
 }
 .button-top {
   margin-top: 30px;
   margin-left: 250px;
-  //padding-left: 90px;
 }
 .button-topp {
   margin-top: 30px;
   margin-left: 50px;
-  //padding-left: 90px;
 }
 .top {
-  //max-width: max-content;
-  //width: 100%;
   height: 90px;
-  //color: #F8EEDE;
   background-color: #f8eede;
   background-size: auto;
   background-repeat: no-repeat;
@@ -27,11 +21,10 @@
   margin: auto;
 }
 .main {
-  //padding: 20px;
   margin: auto;
   min-width: 400px;
-  //max-width: 1800px;
-}
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -39,10 +32,32 @@
   text-decoration: none;
 }
 body {
+  width: 100%;
   font-size: 100%;
   background: #f8eede;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-family: 'poppins-bold';
+}
+.cabecalho-menu-item{
+  font-family: 'FuzzyBubbles';
 }
 .cabecalho{
+display: flex;
+flex-direction: row;
+}
+.cabecalho-imagem{
+display: flex;
+flex-direction: row;
+}
+
+.cabecalho-menu-item{
+display: flex;
+flex-direction: row;
+}
+.conteudo{
 display: flex;
 flex-direction: row;
 }
