@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'poppins-medium'; font-size: 100%;}
+body { margin: 0; font-family: 'poppins-medium'; font-size: 100%; background: #f8eede}
 @font-face {
   font-family: 'FuzzyBubbles';
   src: url(assets/sources/FuzzyBubbles-Bold.ttf) format('truetype');
@@ -27,4 +27,5 @@ body { margin: 0; font-family: 'poppins-medium'; font-size: 100%;}
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
 }
