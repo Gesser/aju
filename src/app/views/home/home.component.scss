@@ -51,7 +51,10 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 24px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 8px;
   border-bottom: 1px solid #ba431d;
   background-color: #f8eede;
 }
@@ -180,7 +183,7 @@ h1 {
 }
 .conteudo-quinto-imagem{
   display: flex;
-  width: 230px;
+  width: 280px;
   height: 310px;
   border-radius: 5.0px;
 }
@@ -229,4 +232,25 @@ h1 {
 .rodape-icone{
   width: 35px;
   margin-left: 40px;
+}
+.teste-1{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.teste-2{
+  //margin-left: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ba431d;
+}
+.teste-3{
+  background-color: #ba431d;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
 }
