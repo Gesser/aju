@@ -3,21 +3,20 @@
   <header class="cabecalho">
     <img
       class="cabecalho-imagem"
-      src="assets/logotipo-azul-do-mar-100.svg"
+      src="assets/logo_estudio.svg"
       alt="Logo da Marca"
     />
-    <a class="cabecalho-menu-item" mat-button href="#conteudoPrincipal">
-      QUEM SOMOS
-    </a>
-    <a class="cabecalho-menu-item" mat-button href="#conteudoSecundario">
+    <a class="cabecalho-menu-item" mat-button href="#quemSomos"> QUEM SOMOS </a>
+    <a class="cabecalho-menu-item" mat-button href="#oQueSomos">
       O QUE SOMOS
     </a>
-    <a class="cabecalho-menu-item" mat-button href="#conteudoRodape"
-      >NOSSO CONTATO</a
-    >
+    <a class="cabecalho-menu-item" mat-button href="#timeCajueiro">
+      CAJUEIRO
+    </a>
+    <a class="cabecalho-menu-item" mat-button href="#contato">NOSSO CONTATO</a>
   </header>
   <main class="conteudo">
-    <section id="conteudoPrincipal" class="conteudo-principal">
+    <section class="conteudo-principal">
       <div class="conteudo-principal-titulo">
         <h1 class="conteudo-principal-texto">Criatividade natural da Bahia</h1>
       </div>
@@ -28,11 +27,11 @@
       />
     </section>
     <!-- coluna introdução -->
-    <section id="conteudoSecundario" class="conteudo-secundario">
+    <section id="quemSomos" class="conteudo-secundario">
       <div class="conteudo-secundario-escrito">
         <h1 class="conteudo-secundario-escrito-titulo">Quem somos</h1>
         <h2 class="conteudo-secundario-escrito-subtitulo">
-          somos um estúdio online de estratégias criativas para empresas e
+          Somos um estúdio online de estratégias criativas para empresas e
           marcas Brasileiras que buscam posicionamento nas redes sociais.
         </h2>
       </div>
@@ -43,7 +42,7 @@
       />
     </section>
     <!-- coluna Serviço -->
-    <section class="conteudo-terciario">
+    <section id="oQueSomos" class="conteudo-terciario">
       <div class="conteudo-terciario-escrito">
         <h1 class="conteudo-terciario-escrito-titulo">Serviço</h1>
         <div class="conteudo-terciario-escrito-texto">
@@ -92,12 +91,15 @@
         <h1 class="conteudo-quaternario-escrito-titulo">Trabalhos</h1>
         <p class="conteudo-quaternario-escrito-subtitulo">
           Social Media/ gerenciamento de redes sociais.
+          -----------------------------------------------
         </p>
         <p class="conteudo-quaternario-escrito-subtitulo">
           planejamento estratégico de conteúdo.
+          --------------------------------------------------
         </p>
         <p class="conteudo-quaternario-escrito-subtitulo">
-          prospecção de publico online
+          prospecção de publico online.
+          ------------------------------------------------------
         </p>
       </div>
       <img
@@ -105,12 +107,12 @@
         src="assets/teste-200.svg"
         alt="Logo da Marca"
       />
-      <!-- coluna equipe -->
     </section>
-    <section class="conteudo-quinto">
+    <!-- coluna equipe -->
+    <section id="timeCajueiro" class="conteudo-quinto">
       <div class="conteudo-quinto-escrito">
-        <h1 class="conteudo-quinto-escrito-titulo">Equipe</h1>
-        <div class="conteudo-terciario-escrito-texto">
+        <h1 class="conteudo-quinto-escrito-titulo">Time Cajueiro</h1>
+        <div class="conteudo-quinto-escrito-texto">
           <div class="linhas">
             <img
               class="conteudo-quinto-imagem"
@@ -118,7 +120,7 @@
               alt="foto da equipe"
             />
             <p>Victoria</p>
-            <p>
+            <p class="conteudo-quinto-escrito-subtitulo">
               Cofundadora da Ajú, diretora de planejamento e conteúdo
               estratégico.
             </p>
@@ -135,30 +137,32 @@
               src="../../../assets/circulo-sarah.svg"
               alt="foto da equipe"
             />
-            <a>Sarah</a>
-            <a>Cofundadora da Ajú, produtora e diretora fotográfica </a>
-            <a
-              >Adora um pastel com caldo cana e depois descansar numa rede. É
+            <p>Sarah</p>
+            <p class="conteudo-quinto-escrito-subtitulo">
+              Cofundadora da Ajú, produtora e diretora fotográfica
+            </p>
+            <p>
+              Adora um pastel com caldo cana e depois descansar numa rede. É
               daquelas que fica calada observando e quando fala é sempre pra dar
               aquela ideia fora da caixinha para equipe.
-            </a>
+            </p>
           </div>
         </div>
-        <div class="conteudo-terciario-escrito-texto">
+        <div class="conteudo-quinto-escrito-texto">
           <div class="linhas">
             <img
               class="conteudo-quinto-imagem"
               src="../../../assets/circulo-gabriel.svg"
               alt="foto da equipe"
             />
-            <a>Gabriel</a>
-            <a>Gestor de Tráfego</a>
-            <a
-              >Adora ler um livro depois uma corridinha na praia, é 8 ou 80:
+            <p>Gabriel</p>
+            <p class="conteudo-quinto-escrito-subtitulo">Gestor de Tráfego</p>
+            <p>
+              Adora ler um livro depois uma corridinha na praia, é 8 ou 80:
               adora uma tranquilidade mas não recusa uma AGONIA. Ele é daquelees
               que sempre dá os melhores conselhos e iniciativas para a equipe.
               Boatos que ele é o nosso Guru,rs.
-            </a>
+            </p>
           </div>
           <div class="linhas">
             <img
@@ -166,58 +170,118 @@
               src="../../../assets/circulo-everton.svg"
               alt="foto da equipe"
             />
-            <a>Everton</a>
-            <a>Faz isso e isso, mais isso com isso, e fazendo isso</a>
+            <p>Everton</p>
+            <p class="conteudo-quinto-escrito-subtitulo">
+              Design e criador de indentidade visual
+            </p>
+            <p>
+              Adora comida e uma boa resenha, parece tímido mas é só dar uma
+              brecha que solta umas piadas inesperadas fazendo todo mundo rir.
+              Podemos dizer que a criatividade é seu sobrenome, além de ser o
+              mais organizado da equipe.
+            </p>
           </div>
         </div>
       </div>
     </section>
   </main>
   <!-- RODAPÉ -->
-  <footer class="conteudo-rodape">
-    <div id="conteudoRodape" class="teste">
+  <footer id="contato" class="rodape">
+    <h1 class="rodape-titulo">CONTATO</h1>
+    <div class="rodape-conteudo">
+      <div class="rodape-conteudo-texto">
+        <p>Ajú estúdio</p>
+        <p>+55 71 9683-8348</p>
+      </div>
+      <div class="rodape-conteudo-texto">
+        <p>contatoajuestudio@gmail.com</p>
+        <p>@ajuestudio</p>
+      </div>
+      <div class="rodape-conteudo-texto">
+        <a
+          link
+          href="https://www.instagram.com/ajuestudio/"
+          class="button-orcamento"
+        >
+          Faça seu orçamento
+        </a>
+      </div>
+    </div>
+    <div class="rodape-conteudo">
+      <a link href="https://www.instagram.com/ajuestudio/">
+        <img
+          class="rodape-conteudo-icone"
+          src="../../../assets/icone-instagram.svg"
+          alt="foto do icone do instagram"
+      /></a>
+      <img
+        class="rodape-conteudo-icone"
+        src="../../../assets/icone-whastapp.svg"
+        alt="foto do icone do whastapp"
+      />
+      <a
+        href="mailto:contatoajuestudio@gmail.com?subject=Gostaria%20de%20fazer%20um%20orçamento"
+      >
+        <img
+          class="rodape-conteudo-icone-email"
+          src="../../../assets/email.svg"
+          alt="foto do icone do email"
+        />
+      </a>
+    </div>
+  </footer>
+  <!-- <footer class="conteudo-rodape">
+    <div id="conteudoRodape" class="conteudo-rodape-linha">
+      <h1 class="conteudo-rodape-escrito-titulo">contato</h1>
+
       <div class="conteudo-rodape-escrito">
-        <h1 class="conteudo-rodape-escrito-titulo">CONTACT ME</h1>
         <div class="conteudo-rodape-escrito-subtitulo">
           <img
             class="rodape-icone"
             src="../../../assets/telefone.svg"
-            alt="foto da equipe"
+            alt="foto do icone do telefone"
           />
-          <p>(71)xxxxx-xxxx</p>
+          <p>+55 71 9683-8348</p>
         </div>
-        <div class="teste-1">
+        <div class="conteudo-rodape-escrito-subtitulo">
           <img
             class="rodape-icone"
             src="../../../assets/localizacao.svg"
-            alt="foto da equipe"
+            alt="foto do icone do localizacao"
           />
-          <div class="teste-2">
-            <p>Av. Santos Dummont, 5481, Casa A 26 – Lauro de Freitas, Bahia</p>
-            <p>42700-000</p>
+          <div>
+            <p>Salvador, Bahia</p>
           </div>
         </div>
       </div>
       <div class="conteudo-rodape-escrito-subtitulo">
-        <img
-          class="rodape-icone"
-          src="../../../assets/icone-instagram.svg"
-          alt="foto do instagram"
-        />
+        <a link href="https://www.instagram.com/ajuestudio/">
+          <img
+            class="rodape-icone"
+            src="../../../assets/icone-instagram.svg"
+            alt="foto do icone do instagram"
+        /></a>
         <img
           class="rodape-icone"
           src="../../../assets/icone-whastapp.svg"
-          alt="foto do instagram"
+          alt="foto do icone do whastapp"
         />
-        <img
-          class="rodape-icone"
-          src="../../../assets/email.svg"
-          alt="foto do instagram"
-        />
-        <button class="teste-3" mat-raised-button>Faça seu orçamento</button>
+        <a
+          href="mailto:contatoajuestudio@gmail.com?subject=Gostaria%20de%20fazer%20um%20orçamento"
+        >
+          <img
+            class="rodape-icone"
+            src="../../../assets/email.svg"
+            alt="foto do icone do email"
+          />
+        </a>
+
+        <button class="button-orcamento" mat-raised-button>
+          Faça seu orçamento
+        </button>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 <!-- <div class="main">
