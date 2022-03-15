@@ -1,19 +1,19 @@
 <body>
-  <header>
-    <nav>
-      <a class="logo" href="/"
-        ><img src="assets/logo_estudio.svg" alt="Logo da Marca"
-      /></a>
-
-        <button class="hamburger" mat-button><mat-icon>menu</mat-icon></button>
-
-      <ul class="nav-list">
-        <li><a mat-button href="#quemSomos">QUEM SOMOS</a></li>
-        <li><a mat-button href="#oQueSomos">O QUE SOMOS</a></li>
-        <li><a mat-button href="#timeCajueiro">CAJUEIRO</a></li>
-        <li><a mat-button href="#contato">NOSSO CONTATO</a></li>
-      </ul>
-    </nav>
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <img
+      class="cabecalho-imagem"
+      src="assets/logo_estudio.svg"
+      alt="Logo da Marca"
+    />
+    <a class="cabecalho-menu-item" mat-button href="#quemSomos"> QUEM SOMOS </a>
+    <a class="cabecalho-menu-item" mat-button href="#oQueSomos">
+      O QUE SOMOS
+    </a>
+    <a class="cabecalho-menu-item" mat-button href="#timeCajueiro">
+      CAJUEIRO
+    </a>
+    <a class="cabecalho-menu-item" mat-button href="#contato">NOSSO CONTATO</a>
   </header>
   <main class="conteudo">
     <section class="conteudo-principal">
@@ -26,8 +26,8 @@
         alt="Logo da Marca"
       />
     </section>
-     <!-- coluna introdução -->
-     <section id="quemSomos" class="conteudo-secundario">
+    <!-- coluna introdução -->
+    <section id="quemSomos" class="conteudo-secundario">
       <div class="conteudo-secundario-escrito">
         <h1 class="conteudo-secundario-escrito-titulo">Quem somos</h1>
         <h2 class="conteudo-secundario-escrito-subtitulo">
@@ -85,8 +85,8 @@
         </div>
       </div>
     </section>
-     <!-- coluna Trabalho -->
-     <section class="conteudo-quaternario">
+    <!-- coluna Trabalho -->
+    <section class="conteudo-quaternario">
       <div class="conteudo-quaternario-escrito">
         <h1 class="conteudo-quaternario-escrito-titulo">Trabalhos</h1>
         <p class="conteudo-quaternario-escrito-subtitulo">
@@ -124,6 +124,12 @@
               Cofundadora da Ajú, diretora de planejamento e conteúdo
               estratégico.
             </p>
+            <p>
+              Adora acarajé, banho de mar e perambular pela cidade, diz ela que
+              é boêmia.Se deixar faz reunião de 3 horas e fica falando as 3
+              horas sem parar. Boatos que adora a natureza e que em dias de
+              folga corre para os matos.
+            </p>
           </div>
           <div class="linhas">
             <img
@@ -135,7 +141,11 @@
             <p class="conteudo-quinto-escrito-subtitulo">
               Cofundadora da Ajú, produtora e diretora fotográfica
             </p>
-
+            <p>
+              Adora um pastel com caldo cana e depois descansar numa rede. É
+              daquelas que fica calada observando e quando fala é sempre pra dar
+              aquela ideia fora da caixinha para equipe.
+            </p>
           </div>
         </div>
         <div class="conteudo-quinto-escrito-texto">
@@ -147,6 +157,12 @@
             />
             <p>Gabriel</p>
             <p class="conteudo-quinto-escrito-subtitulo">Gestor de Tráfego</p>
+            <p>
+              Adora ler um livro depois uma corridinha na praia, é 8 ou 80:
+              adora uma tranquilidade mas não recusa uma AGONIA. Ele é daquelees
+              que sempre dá os melhores conselhos e iniciativas para a equipe.
+              Boatos que ele é o nosso Guru,rs.
+            </p>
           </div>
           <div class="linhas">
             <img
@@ -158,9 +174,63 @@
             <p class="conteudo-quinto-escrito-subtitulo">
               Design e criador de indentidade visual
             </p>
+            <p>
+              Adora comida e uma boa resenha, parece tímido mas é só dar uma
+              brecha que solta umas piadas inesperadas fazendo todo mundo rir.
+              Podemos dizer que a criatividade é seu sobrenome, além de ser o
+              mais organizado da equipe.
+            </p>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <!-- RODAPÉ -->
+  <footer id="contato" class="rodape">
+    <h1 class="rodape-titulo">CONTATO</h1>
+    <div class="rodape-conteudo">
+      <div class="rodape-conteudo-texto">
+        <p>Ajú estúdio</p>
+        <p>+55 71 9683-8348</p>
+      </div>
+      <div class="rodape-conteudo-texto">
+        <p>contatoajuestudio@gmail.com</p>
+        <p>@ajuestudio</p>
+      </div>
+      <div class="rodape-conteudo-texto">
+        <a
+          link
+          href="https://www.instagram.com/ajuestudio/"
+          class="button-orcamento"
+        >
+          Faça seu orçamento
+        </a>
+      </div>
+    </div>
+    <div class="rodape-conteudo">
+      <a link href="https://www.instagram.com/ajuestudio/">
+        <img
+          class="rodape-conteudo-icone"
+          src="../../../assets/icone-instagram.svg"
+          alt="foto do icone do instagram"
+      /></a>
+      <img
+        class="rodape-conteudo-icone"
+        src="../../../assets/icone-whastapp.svg"
+        alt="foto do icone do whastapp"
+      />
+      <a
+        href="mailto:contatoajuestudio@gmail.com?subject=Gostaria%20de%20fazer%20um%20orçamento"
+      >
+        <img
+          class="rodape-conteudo-icone-email"
+          src="../../../assets/email.svg"
+          alt="foto do icone do email"
+        />
+      </a>
+    </div>
+  </footer>
 </body>
+
+
+
