@@ -1,35 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 
-html,
+/* html,
 body {
   height: 100%;
-}
+  width: 100%;
+} */
+
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "poppins-medium";
   font-size: 100%;
-  background: #f8eede;
+  background-color: #f8eede;
+  color: #ba431d;
+  max-width: 1200px;
+  padding: 2px
 }
+
 @font-face {
   font-family: "FuzzyBubbles";
   src: url(assets/sources/FuzzyBubbles-Bold.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "poppins-bold";
   src: url(assets/sources/Poppins-Bold.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "poppins-bold-italic";
   src: url(assets/sources/Poppins-BoldItalic.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "poppins-medium";
   src: url(assets/sources/Poppins-Medium.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "poppins-medium-italic";
   src: url(assets/sources/Poppins-MediumItalic.ttf) format("truetype");
 }
+
 * {
   margin: 0;
   padding: 0;

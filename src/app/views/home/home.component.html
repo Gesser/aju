@@ -2,165 +2,73 @@
   <header>
     <nav>
       <a class="logo" href="/"
-        ><img src="assets/logo_estudio.svg" alt="Logo da Marca"
+        ><img
+          style="width: 12ch"
+          src="assets/logo_estudio.svg"
+          alt="Logo da Marca"
       /></a>
 
-        <button class="hamburger" mat-button><mat-icon>menu</mat-icon></button>
+      <button class="hamburger" mat-button><mat-icon>menu</mat-icon></button>
 
       <ul class="nav-list">
+        <li><a mat-button href="#boasVindas">BOAS VINDAS</a></li>
         <li><a mat-button href="#quemSomos">QUEM SOMOS</a></li>
-        <li><a mat-button href="#oQueSomos">O QUE SOMOS</a></li>
+        <li><a mat-button href="#servico">SERVIÇO</a></li>
         <li><a mat-button href="#timeCajueiro">CAJUEIRO</a></li>
         <li><a mat-button href="#contato">NOSSO CONTATO</a></li>
       </ul>
     </nav>
   </header>
-  <main class="conteudo">
-    <section class="conteudo-principal">
-      <div class="conteudo-principal-titulo">
-        <h1 class="conteudo-principal-texto">Criatividade natural da Bahia</h1>
-      </div>
-      <img
-        class="conteudo-principal-imagem"
-        src="assets/mar-300.svg"
-        alt="Logo da Marca"
-      />
+  <main>
+    <section id="boasVindas">
+      <aside id="texto-boasVindas">
+        <h1>Criatividade natural da Bahia</h1>
+        <h2>Bem vindos</h2>
+        <h3>Ondas de criatividade</h3>
+      </aside>
+      <article>
+        <img
+          id="imagem-boasVindas"
+          src="assets/mar-300.svg"
+          alt="Logo da Marca"
+        />
+      </article>
     </section>
-     <!-- coluna introdução -->
-     <section id="quemSomos" class="conteudo-secundario">
-      <div class="conteudo-secundario-escrito">
-        <h1 class="conteudo-secundario-escrito-titulo">Quem somos</h1>
-        <h2 class="conteudo-secundario-escrito-subtitulo">
+    <section id="quemSomos">
+      <aside id="texto-quemSomos">
+        <h1>Quem somos ?</h1>
+        <h2>
           Somos um estúdio online de estratégias criativas para empresas e
           marcas Brasileiras que buscam posicionamento nas redes sociais.
         </h2>
-      </div>
-      <img
-        class="conteudo-secundario-imagem"
-        src="assets/propaganda-01.png"
-        alt="Propaganda de celular"
-      />
+      </aside>
+      <article>
+        <img
+          id="imagem-QuemSomos"
+          src="assets/propaganda-01.png"
+          alt="Propaganda de celular"
+        />
+      </article>
     </section>
-    <!-- coluna Serviço -->
-    <section id="oQueSomos" class="conteudo-terciario">
-      <div class="conteudo-terciario-escrito">
-        <h1 class="conteudo-terciario-escrito-titulo">Serviço</h1>
-        <div class="conteudo-terciario-escrito-texto">
+    <section id="servico">
+      <aside id="texto-servico">
+        <h1>Serviço</h1>
+        <div>
           <div class="linhas">
-            <a class="bola-numero">1</a>
-            <a class="conteudo-secundario-escrito-subtitulo"
-              >planejamento estratégico de conteúdo</a
-            >
-          </div>
-          <div class="linhas">
-            <a class="bola-numero">2</a>
-            <a>planejamento estratégico de conteúdo</a>
-          </div>
-          <div class="linhas">
-            <a class="bola-numero">3</a>
-            <a>Branding & reebranding</a>
-          </div>
-          <div class="linhas">
-            <a class="bola-numero">4</a>
-            <a>identidade visual</a>
-          </div>
-        </div>
-        <div class="conteudo-terciario-escrito-texto">
-          <div class="linhas">
-            <a class="bola-numero">5</a>
-            <a>produção e direção de fotografia para marcas</a>
-          </div>
-          <div class="linhas">
-            <a class="bola-numero">6</a>
-            <a>prospecção de publico online</a>
-          </div>
-          <div class="linhas">
-            <a class="bola-numero">7</a>
-            <a>linha visual feed e stories</a>
-          </div>
-          <div class="linhas">
-            <a class="bola-numero">8</a>
-            <a>tráfego pago</a>
-          </div>
-        </div>
-      </div>
-    </section>
-     <!-- coluna Trabalho -->
-     <section class="conteudo-quaternario">
-      <div class="conteudo-quaternario-escrito">
-        <h1 class="conteudo-quaternario-escrito-titulo">Trabalhos</h1>
-        <p class="conteudo-quaternario-escrito-subtitulo">
-          Social Media/ gerenciamento de redes sociais.
-          -----------------------------------------------
-        </p>
-        <p class="conteudo-quaternario-escrito-subtitulo">
-          planejamento estratégico de conteúdo.
-          --------------------------------------------------
-        </p>
-        <p class="conteudo-quaternario-escrito-subtitulo">
-          prospecção de publico online.
-          ------------------------------------------------------
-        </p>
-      </div>
-      <img
-        class="conteudo-quaternario-imagem"
-        src="assets/teste-200.svg"
-        alt="Logo da Marca"
-      />
-    </section>
-    <!-- coluna equipe -->
-    <section id="timeCajueiro" class="conteudo-quinto">
-      <div class="conteudo-quinto-escrito">
-        <h1 class="conteudo-quinto-escrito-titulo">Time Cajueiro</h1>
-        <div class="conteudo-quinto-escrito-texto">
-          <div class="linhas">
-            <img
-              class="conteudo-quinto-imagem"
-              src="../../../assets/circulo-victoria.svg"
-              alt="foto da equipe"
-            />
-            <p>Victoria</p>
-            <p class="conteudo-quinto-escrito-subtitulo">
-              Cofundadora da Ajú, diretora de planejamento e conteúdo
-              estratégico.
-            </p>
-          </div>
-          <div class="linhas">
-            <img
-              class="conteudo-quinto-imagem"
-              src="../../../assets/circulo-sarah.svg"
-              alt="foto da equipe"
-            />
-            <p>Sarah</p>
-            <p class="conteudo-quinto-escrito-subtitulo">
-              Cofundadora da Ajú, produtora e diretora fotográfica
-            </p>
-
-          </div>
-        </div>
-        <div class="conteudo-quinto-escrito-texto">
-          <div class="linhas">
-            <img
-              class="conteudo-quinto-imagem"
-              src="../../../assets/circulo-gabriel.svg"
-              alt="foto da equipe"
-            />
-            <p>Gabriel</p>
-            <p class="conteudo-quinto-escrito-subtitulo">Gestor de Tráfego</p>
-          </div>
-          <div class="linhas">
-            <img
-              class="conteudo-quinto-imagem"
-              src="../../../assets/circulo-everton.svg"
-              alt="foto da equipe"
-            />
-            <p>Everton</p>
-            <p class="conteudo-quinto-escrito-subtitulo">
-              Design e criador de indentidade visual
+            <h3 class="bola-numero">1</h3>
+            <p class="conteudo-secundario-escrito-subtitulo">
+              planejamento estratégico de conteúdo
             </p>
           </div>
         </div>
-      </div>
+      </aside>
+      <article>
+        <img
+          id="imagem-QuemSomos"
+          src="assets/propaganda-01.png"
+          alt="Propaganda de celular"
+        />
+      </article>
     </section>
   </main>
 </body>

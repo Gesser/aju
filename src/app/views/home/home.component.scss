@@ -2,14 +2,13 @@ $branco: #fafafa;
 $preto: #1a1a1a;
 $barro: #ba431d;
 
-body {
-  margin: 0;
-}
 .logo {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  //margin-left: 10vh;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -20,9 +19,10 @@ ul {
 nav {
   //background-color: #161616;
   color: $barro;
-  padding: 0 20px;
+  padding: 0 40px;
   justify-content: space-between;
   align-items: center;
+
 }
 
 nav-list {
@@ -36,7 +36,9 @@ ul {
 }
 
 li {
-  padding: 0 20px;
+  //padding: 10px;
+  display: inline-block;
+  margin: 20px;
 }
 
 
@@ -60,11 +62,12 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-button:focus ~ ul {
+button:focus~ul {
   height: 260px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
+
   nav,
   ul {
     flex-direction: column;
@@ -93,4 +96,65 @@ button:focus ~ ul {
   ul {
     width: 100%;
   }
+}
+
+header {
+  //display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //align-items: center;
+}
+
+#boasVindas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#texto-boasVindas {
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  //margin: 30px;
+}
+
+#imagem-boasVindas {
+  display: flex;
+  width: 800px;
+  justify-content: flex-end;
+  margin-left: 40vh;
+}
+
+#quemSomos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#texto-quemSomos {
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  //margin: 30px;
+}
+
+#imagem-quemSomos {
+  display: flex;
+  width: 800px;
+  justify-content: flex-end;
+  margin-left: 40vh;
+
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 200;
+  font-size: bold;
+  line-height: 40px;
 }
