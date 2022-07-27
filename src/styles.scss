@@ -1,23 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
 
-/* html,
-body {
-  height: 100%;
-  width: 100%;
-} */
+$branco: #fafafa;
+$preto: #1a1a1a;
+$barro: #ba431d;
+$beje: #DAABBC;
+$cinza-claro: #F8EEDE;
+$amarelo: #FEB657;
+$verde: #5B896C;
+$azul: #3768B3;
 
 body {
   margin: 0 auto;
   font-family: "poppins-medium";
   font-size: 100%;
-  background-color: #f8eede;
-  color: #ba431d;
+  background-color: $cinza-claro;
+  color: $barro;
   max-width: 1200px;
   padding: 2px
 }
 
 @font-face {
-  font-family: "FuzzyBubbles";
+  font-family: "fuzzyBubbles";
   src: url(assets/sources/FuzzyBubbles-Bold.ttf) format("truetype");
 }
 
@@ -45,112 +47,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* $branco: #fafafa;
-$preto: #1a1a1a;
-$barro: #ba431d;
-
-nav a {
-  color: $barro;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  opacity: 0.7;
-}
-
-.logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  //background: #23232e;
-  margin-top: 23px;
-  height: 8vh;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
-  //margin-top: 23px;
-  //padding: 0  10px;
-}
-.hamburger {
-  background-color: transparent;
-  border: none;
-  color: $barro;
-  font-size: 36px;
-  position: absolute;
-  right: 10px;
-  //top: 30px;
-  height: 8vh;
-  display: none;
-}
-.hamburger:focus ~ ul {
-  height: 260px;
-}
-.mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu div {
-  width: 50px;
-  height: 2px;
-  margin-top: 23px;
-  background: #fff;
-  margin: 8px;
-  transition: 0.3s;
-}
-
-@media (max-width: 899px) {
-  body {
-    overflow-x: hidden;
-  }
-  nav{
-    flex-direction: column;
-  }
-  .nav-list {
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-    height: 0;
-    width: 100%;
-    //position: absolute;
-    //top: 8vh;
-    //right: 0;
-    //width: 50vw;
-    //height: 92vh;
-    color: $barro;
-    background: #23232e;
-    //flex-direction: column;
-    //align-items: center;
-    //justify-content: space-around;
-    //transform: translateX(100%);
-    //transition: transform 0.3s ease-in;
-  }
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-    width: 100%;
-  }
-  .hamburger {
-    display: flex;
-}
-}
-.nav-list.active {
-  transform: translateX(0);
-} */
