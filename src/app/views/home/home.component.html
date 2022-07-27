@@ -1,30 +1,33 @@
 <body>
   <header>
+    <article>
+      <a href="/">
+        <img src="assets/logo_estudio.svg" alt="Logo da Marca" id="logo" />
+      </a>
+    </article>
     <nav>
-      <a class="logo" href="/"
-        ><img
-          style="width: 12ch"
-          src="assets/logo_estudio.svg"
-          alt="Logo da Marca"
-      /></a>
-
-      <button class="hamburger" mat-button><mat-icon>menu</mat-icon></button>
-
-      <ul class="nav-list">
-        <li><a mat-button href="#boasVindas">BOAS VINDAS</a></li>
-        <li><a mat-button href="#quemSomos">QUEM SOMOS</a></li>
-        <li><a mat-button href="#servico">SERVIÇO</a></li>
-        <li><a mat-button href="#timeCajueiro">CAJUEIRO</a></li>
-        <li><a mat-button href="#contato">NOSSO CONTATO</a></li>
-      </ul>
+      <aside>
+        <button mat-button><mat-icon>menu</mat-icon></button>
+        <ul>
+          <a mat-button href="#boasVindas"><li>BOAS VINDAS</li></a>
+          <a mat-button href="#quemSomos"><li>QUEM SOMOS</li></a>
+          <a mat-button href="#servicos"><li>SERVIÇOS</li></a>
+          <a mat-button href="#timeCajueiro"><li>CAJUEIRO</li></a>
+          <a mat-button href="#contato"><li>NOSSO CONTATO</li></a>
+        </ul>
+      </aside>
     </nav>
   </header>
   <main>
     <section id="boasVindas">
       <aside id="texto-boasVindas">
         <h1>Criatividade natural da Bahia</h1>
-        <h2>Bem vindos</h2>
-        <h3>Ondas de criatividade</h3>
+        <h3>Bem vindos</h3>
+        <aside id="title">
+          <h4>Ondas de</h4>
+          <span><h4 id="criatividade">criatividade</h4></span>
+          <h4>seguindo o ritmo do mar baiano.</h4>
+        </aside>
       </aside>
       <article>
         <img
@@ -35,40 +38,108 @@
       </article>
     </section>
     <section id="quemSomos">
+      <article>
+        <img
+          id="imagem-QuemSomos"
+          src="assets/propaganda-01.png"
+          alt="Propaganda de celular"
+        />
+      </article>
       <aside id="texto-quemSomos">
-        <h1>Quem somos ?</h1>
-        <h2>
+        <h2>Quem somos ?</h2>
+        <h3>
           Somos um estúdio online de estratégias criativas para empresas e
           marcas Brasileiras que buscam posicionamento nas redes sociais.
-        </h2>
+        </h3>
       </aside>
-      <article>
-        <img
-          id="imagem-QuemSomos"
-          src="assets/propaganda-01.png"
-          alt="Propaganda de celular"
-        />
-      </article>
     </section>
-    <section id="servico">
+    <section id="servicos">
+      <h1>Serviços</h1>
       <aside id="texto-servico">
-        <h1>Serviço</h1>
-        <div>
-          <div class="linhas">
-            <h3 class="bola-numero">1</h3>
-            <p class="conteudo-secundario-escrito-subtitulo">
-              planejamento estratégico de conteúdo
-            </p>
+        <aside id="container-circulo">
+          <div>
+            <h4>1</h4>
           </div>
-        </div>
+          <h3>Social Media/ gerenciamento de redes sociais</h3>
+        </aside>
+        <aside id="container-circulo">
+          <div>
+            <h4>2</h4>
+          </div>
+          <h3>Planejamento estratégico de conteúdo</h3>
+        </aside>
+        <aside id="container-circulo">
+          <div>
+            <h4>3</h4>
+          </div>
+          <h3>Branding & reebranding</h3>
+        </aside>
+        <aside id="container-circulo">
+          <div>
+            <h4>4</h4>
+          </div>
+          <h3>Identidade visual</h3>
+        </aside>
       </aside>
-      <article>
-        <img
-          id="imagem-QuemSomos"
-          src="assets/propaganda-01.png"
-          alt="Propaganda de celular"
-        />
-      </article>
+      <aside id="texto-servico">
+        <aside id="container-circulo">
+          <div>
+            <h4>5</h4>
+          </div>
+          <h3>Produção e direção de fotografia para marcas</h3>
+        </aside>
+        <aside id="container-circulo">
+          <div>
+            <h4>6</h4>
+          </div>
+          <h3>Prospecção de público online</h3>
+        </aside>
+        <aside id="container-circulo">
+          <div>
+            <h4>7</h4>
+          </div>
+          <h3>Linha visual feed e stories</h3>
+        </aside>
+        <aside id="container-circulo">
+          <div>
+            <h4>8</h4>
+          </div>
+          <h3>Tráfego pago</h3>
+        </aside>
+      </aside>
+    </section>
+    <section id="trabalhos">
+      <h1>Trabalhos</h1>
+      <div id="trabalhos-container">
+        <aside id="semMargem">
+          <div>
+            <h3>Social Media/ gerenciamento de redes sociais</h3>
+            <mat-divider style="width: 100%"></mat-divider>
+          </div>
+          <div>
+            <h3>Planejamento estratégico de conteúdo</h3>
+            <mat-divider style="width: 100%"></mat-divider>
+          </div>
+          <div>
+            <h3>Prospecção de público online</h3>
+            <mat-divider style="width: 100%"></mat-divider>
+          </div>
+        </aside>
+        <article>
+          <img alt="instagram flat308" src="assets/flat308.svg" />
+        </article>
+      </div>
+    </section>
+    <section id="conteudo"></section>
+    <section id="timeCajueiro"></section>
+    <section id="contato">
+      <aside><h1>Contatos</h1></aside>
+      <aside id="linha">
+        <h4>Instagram</h4>
+        <h4>WhatsApp</h4>
+        <h4>Email</h4>
+      </aside>
+      <aside><button>Orçamento</button></aside>
     </section>
   </main>
 </body>

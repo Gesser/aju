@@ -1,160 +1,332 @@
 $branco: #fafafa;
 $preto: #1a1a1a;
 $barro: #ba431d;
+$beje: #DAABBC;
+$cinza-claro: #F8EEDE;
+$amarelo: #FEB657;
+$verde: #5B896C;
+$azul: #3768B3;
 
-.logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  //margin-left: 10vh;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-
-nav {
-  //background-color: #161616;
-  color: $barro;
-  padding: 0 40px;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-nav-list {
-  color: $barro;
-}
-
-nav,
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
-li {
-  //padding: 10px;
-  display: inline-block;
-  margin: 20px;
-}
-
-
-button {
-  background-color: transparent;
-  border: none;
-  color: $barro;
-  font-size: 36px;
-  position: absolute;
-  right: 10px;
-  top: 30px;
-  height: 8vh;
-  display: none;
-}
-
-li:hover,
-h1:hover,
-button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-button:focus~ul {
-  height: 260px;
-}
-
-@media (max-width: 1000px) {
-
-  nav,
-  ul {
-    flex-direction: column;
-  }
-
-  ul {
-    text-align: center;
-    margin: 0;
-    height: 0;
-  }
-
-  nav {
-    padding: 0;
-    align-items: flex-start;
-  }
-
-  h1 {
-    margin: 10px;
-  }
-
-  button {
-    display: flex;
-  }
-
-  li,
-  ul {
-    width: 100%;
-  }
+h4 {
+  margin: 0;
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 header {
-  //display: flex;
+  display: flex;
+  width: 100%;
+  top: 0;
   flex-direction: row;
   justify-content: space-between;
-  //align-items: center;
+  align-items: center;
+  position: fixed;
+  //right: 100;
+  left: 0;
+  max-width: 100%;
+  //padding-left: 4ch;
+  //padding-right: 4ch;
+  background-color: $cinza-claro;
+  //z-index: 999px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-size: 20px;
+    //margin-left: 10px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav,
+  ul {
+    width: 100%;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: end;
+  }
+
+  li {
+    display: inline-block;
+    margin: 3px;
+    font-size: 13px;
+  }
+
+
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 36px;
+    position: absolute;
+    top: 7vh;
+    height: 2vh;
+    display: none;
+  }
+
+  li:hover,
+  h1:hover,
+  button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  button:focus~ul {
+    height: 270px;
+  }
+
+  @media (max-width: 620px) {
+
+    nav,
+    ul {
+      flex-direction: column;
+    }
+
+    ul {
+      align-items: baseline;
+      margin: 0;
+      height: 0;
+    }
+
+    nav {
+      padding: 0;
+      align-items: flex-start;
+    }
+
+    button {
+      display: flex;
+      color: $barro;
+      margin-bottom: 6vh;
+
+    }
+
+    li,
+    ul {
+      width: 100%;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  gap: 10vh;
+}
+
+#logo {
+  width: 100px;
+  height: 100%;
 }
 
 #boasVindas {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  //background-color: $barro;
+  //width: 100%;
+
+  h1 {
+    font-size: 45px;
+    font-weight: 600px;
+  }
+
+  h3 {
+    font-size: 39px;
+    font-weight: 200px;
+  }
+
+
+
+  #criatividade {
+    font-family: "fuzzyBubbles";
+    color: $amarelo;
+  }
+
+  img {
+    width: 500px;
+    height: 500px;
+    //height: 100px;
+    //position: absolute;
+    //right: 0;
+    //top: 0;
+    //z-index: -2;
+    //left: 0;
+    //object-fit: cover;
+  }
 }
 
-#texto-boasVindas {
+#title {
   display: flex;
   flex-direction: column;
-  line-height: 10px;
-  //margin: 30px;
-}
-
-#imagem-boasVindas {
-  display: flex;
-  width: 800px;
-  justify-content: flex-end;
-  margin-left: 40vh;
+  padding: 12px;
 }
 
 #quemSomos {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+
+  img {
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    left: 0;
+  }
+
+  h2 {
+    font-size: 45px;
+    font-weight: 500px;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 200px;
+  }
+
+  #texto-quemSomos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
-#texto-quemSomos {
+
+#servicos {
   display: flex;
   flex-direction: column;
-  line-height: 10px;
-  //margin: 30px;
+  justify-content: space-around;
+
+  gap: 20px;
+
+  #texto-servico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 40px;
+    font-weight: 400;
+    color: $cinza-claro;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  #container-circulo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //position: absolute;
+    //top: 20%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    height: 90px;
+    width: 90px;
+    border-radius: 150px 150px 150px 150px;
+    background-color: $barro;
+  }
 }
 
-#imagem-quemSomos {
+#trabalhos {
   display: flex;
-  width: 800px;
-  justify-content: flex-end;
-  margin-left: 40vh;
+  flex-direction: column;
+  justify-content: space-between;
 
+  mat-divider {
+    background-color: $barro;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-weight: 400
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  img {
+    height: 600px;
+    left: 0;
+  }
+
+  #trabalhos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    //gap:5px;
+    #semMargem {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 }
 
-h1 {
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 50px;
-}
+#contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $cinza-claro;
+  background-color: $barro;
 
-h2 {
-  font-size: 45px;
-  font-weight: 200;
-  font-size: bold;
-  line-height: 40px;
+  h1 {
+    font-size: 70px;
+    font-weight: 400
+  }
+
+  #linha {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
