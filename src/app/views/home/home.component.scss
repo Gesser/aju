@@ -29,7 +29,7 @@ header {
   //padding-right: 4ch;
   background-color: $cinza-claro;
   //z-index: 999px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  //box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 
   ul {
     display: flex;
@@ -121,8 +121,14 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
-  gap: 10vh;
+  //gap: 10vh;
 }
+
+section {
+  padding: 20vh;
+}
+
+
 
 #logo {
   width: 100px;
@@ -179,6 +185,7 @@ main {
   align-items: center;
   justify-content: space-around;
   gap: 20px;
+  background-color: $beje;
 
   img {
     width: 700px;
@@ -209,7 +216,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  background-color: $amarelo;
   gap: 20px;
 
   #texto-servico {
@@ -224,18 +231,20 @@ main {
   h1 {
     font-size: 70px;
     font-weight: 400;
+    color: $cinza-claro;
   }
 
   h4 {
     font-size: 40px;
     font-weight: 400;
-    color: $cinza-claro;
+    color: $amarelo;
   }
 
   h3 {
     font-size: 30px;
     font-weight: 300;
     text-align: center;
+    color: $cinza-claro;
   }
 
   #container-circulo {
@@ -258,7 +267,7 @@ main {
     height: 90px;
     width: 90px;
     border-radius: 150px 150px 150px 150px;
-    background-color: $barro;
+    background-color: $cinza-claro;
   }
 }
 
@@ -266,9 +275,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $azul;
+  color: $cinza-claro;
 
   mat-divider {
-    background-color: $barro;
+    background-color: $cinza-claro;
   }
 
   h1 {
@@ -297,6 +308,7 @@ main {
 
     //gap:5px;
     #semMargem {
+      width: 100%;
       margin: 0;
       padding: 0;
     }
@@ -310,6 +322,80 @@ main {
   }
 }
 
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  //align-items: center;
+  h3 {
+    margin: 0;
+    line-height: 50px;
+    font-size: 45px;
+    font-weight: 200;
+  }
+
+  img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  #midias {
+    font-family: "fuzzyBubbles";
+    color: $amarelo;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  #container-img-1 {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+
+  #container-texto {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    line-height: 10px;
+    padding: 5px;
+    justify-content: end;
+  }
+
+
+  #container-img-3 {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+
+    img {
+      width: 100%;
+      //height: 100%;
+    }
+  }
+}
+#timeCajueiro{
+  background-color:$verdegit add rgba(0, 0, 0, 0.5)git commit -m "refactor: ajuste de estilizacao"
+  git push origin;
+}
 #contato {
   display: flex;
   flex-direction: column;
