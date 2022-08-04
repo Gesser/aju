@@ -260,10 +260,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    //position: absolute;
-    //top: 20%;
-    //left: 50%;
-    //transform: translate(-50%, -50%);
     height: 90px;
     width: 90px;
     border-radius: 150px 150px 150px 150px;
@@ -306,7 +302,6 @@ section {
     align-items: center;
     justify-content: space-between;
 
-    //gap:5px;
     #semMargem {
       width: 100%;
       margin: 0;
@@ -327,7 +322,6 @@ section {
   flex-direction: column;
   justify-content: space-between;
 
-  //align-items: center;
   h3 {
     margin: 0;
     line-height: 50px;
@@ -392,11 +386,13 @@ section {
     }
   }
 }
-#timeCajueiro{
-  background-color:$verdegit add rgba(0, 0, 0, 0.5)git commit -m "refactor: ajuste de estilizacao"
-  git push origin;
+
+#timeCajueiro {
+  background-color: $verde;
 }
+
 #contato {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -405,7 +401,32 @@ section {
 
   h1 {
     font-size: 70px;
-    font-weight: 400
+    font-weight: 400;
+    color: $cinza-claro;
+  }
+ h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: $cinza-claro;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  button {
+    font-size: 50px;
+    font-weight: 200;
+    color: $barro;
+    background-color: $cinza-claro;
+    border:none
+  }
+
+  #bordeButton{
+    display: flex;
+    align-items: center;
+    background-color: $cinza-claro;
+    box-shadow: 15px 10px 10px 5px rgba(0, 0, 0, 0.5);
   }
 
   #linha {
@@ -413,6 +434,32 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 15vh;
+  }
+
+  #icone-contato {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #texto-rodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    position: relative;
+    margin-top:20vh;
+  }
+  #logotipo-rodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    img{
+      width: 10%;
+    }
   }
 }
