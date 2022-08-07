@@ -24,12 +24,14 @@ header {
   position: fixed;
   //right: 100;
   left: 0;
-  max-width: 100%;
+  //max-width: 100%;
   //padding-left: 4ch;
   //padding-right: 4ch;
   background-color: $cinza-claro;
-  //z-index: 999px;
-  //box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+
+  z-index: 999px;
+
+  //box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
 
   ul {
     display: flex;
@@ -140,17 +142,13 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  //background-color: $barro;
-  //width: 100%;
 
-  h1 {
-    font-size: 45px;
-    font-weight: 600px;
-  }
 
   h3 {
-    font-size: 39px;
+    font-size: 45px;
     font-weight: 200px;
+    line-height: 50px;
+    letter-spacing: 2px;
   }
 
 
@@ -173,10 +171,18 @@ section {
   }
 }
 
+#texto-boasVindas {
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 #title {
   display: flex;
   flex-direction: column;
-  padding: 12px;
+  //padding: 12px;
 }
 
 #quemSomos {
@@ -185,10 +191,12 @@ section {
   align-items: center;
   justify-content: space-around;
   gap: 20px;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
   background-color: $beje;
 
-  img {
-    width: 700px;
+  #imagem-QuemSomos {
+    width: 680px;
     border-radius: 20px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
     left: 0;
@@ -208,6 +216,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding: 20px;
   }
 }
 
@@ -284,14 +293,16 @@ section {
   }
 
   h3 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
-    line-height: 50px;
+    //line-height:5px;
+    color: $cinza-claro;
     text-align: center;
+    letter-spacing: 3px;
   }
 
   img {
-    height: 600px;
+    height: 520px;
     left: 0;
   }
 
@@ -321,6 +332,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
 
   h3 {
     margin: 0;
@@ -329,9 +341,17 @@ section {
     font-weight: 200;
   }
 
-  img {
+  #conteudo1 {
+    height: 220px;
     border-radius: 20px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  #conteudo2 {
+    height: 280px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    transition: all 2s ease 0;
   }
 
   #midias {
@@ -339,34 +359,28 @@ section {
     color: $amarelo;
   }
 
-  div {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 5px;
-  }
+
 
   #container-img-1 {
     display: flex;
     flex-direction: row;
-    width: 30%;
     height: 100%;
     align-items: center;
     gap: 10px;
-    padding: 5px;
-
-    img {
-      width: 100%;
-    }
   }
 
+  #container-texImagem {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 
   #container-texto {
     display: flex;
-    width: 400px;
+    //width: 400px;
     flex-direction: column;
     line-height: 10px;
-    padding: 5px;
+    //padding: 40px;
     justify-content: end;
   }
 
@@ -374,21 +388,180 @@ section {
   #container-img-3 {
     display: flex;
     flex-direction: row;
-    width: 30%;
+    //width: 30%;
     height: 100%;
     align-items: center;
     gap: 10px;
-    padding: 5px;
-
-    img {
-      width: 100%;
-      //height: 100%;
-    }
+    //padding: 5px;
+    transition: all 2s ease 0
   }
+
 }
 
 #timeCajueiro {
+  display: flex;
+  //height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $verde;
+  //z-index: 999;
+
+  h1 {
+    font-size: 70px;
+    font-weight: 400;
+    color: $cinza-claro;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: $cinza-claro;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+    //line-height:5px;
+    color: $cinza-claro;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  h4 {
+    margin: 0;
+    line-height: 50px;
+    font-size: 45px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: $cinza-claro;
+  }
+
+  #fotoIndividual {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    //border-radius: 50%;
+    //background: #FFF;
+    padding: 10px;
+  }
+
+  #fontFuzzy {
+    font-family: "fuzzyBubbles";
+    color: $amarelo;
+    padding: 2px;
+  }
+
+  #container-mid {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #container-time {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: palegreen;
+
+  }
+
+  swiper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #container-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 40px;
+    //z-index: -1;
+    //background-color:$amarelo
+  }
+
+  #card {
+    display: flex;
+    width: 70%;
+    height: 480px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    //padding:15px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $amarelo
+  }
+
+  #card-container-imagem {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 60px 0px;
+    //padding:15px
+    background-color: $cinza-claro
+  }
+
+  #card-container-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //border-radius: 20px;
+    padding: 20px
+  }
+
+  #container-bio {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    //background-color:plum;
+    justify-content: flex-start;
+  }
+
+  #desliza-direita {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 2vh;
+    //background-color: plum
+  }
+
+  #img-desliza {
+    width: 10%;
+    height: 10%;
+  }
+
+  @media (max-width: 1400px) {
+    #fotoIndividual {
+      position: relative;
+      height: 80%;
+      width: 80%;
+    }
+
+    #container-time {
+      width: 50%;
+    }
+  }
+
 }
 
 #contato {
@@ -404,29 +577,33 @@ section {
     font-weight: 400;
     color: $cinza-claro;
   }
- h3 {
-    font-size: 30px;
+
+  h3 {
+    font-size: 20px;
     font-weight: 300;
     color: $cinza-claro;
   }
 
   img {
-    width: 70%;
+    width: 60%;
   }
 
   button {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
     color: $barro;
+    padding: 10px;
     background-color: $cinza-claro;
-    border:none
+    border: none;
+    border-radius: 30px;
   }
 
-  #bordeButton{
+  #bordeButton {
     display: flex;
     align-items: center;
     background-color: $cinza-claro;
-    box-shadow: 15px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    //box-shadow: 15px 10px 10px 5px rgba(0, 0, 0, 0.5);
   }
 
   #linha {
@@ -443,22 +620,25 @@ section {
     display: flex;
     flex-direction: row;
   }
-  #texto-rodape{
+
+  #texto-rodape {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom:0;
+    bottom: 0;
     position: relative;
-    margin-top:20vh;
+    margin-top: 20vh;
   }
-  #logotipo-rodape{
+
+  #logotipo-rodape {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom:0;
-    img{
+    bottom: 0;
+
+    img {
       width: 10%;
     }
   }

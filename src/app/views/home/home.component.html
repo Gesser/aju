@@ -21,7 +21,6 @@
   <main>
     <section id="boasVindas">
       <aside id="texto-boasVindas">
-        <h1>Criatividade natural da Bahia</h1>
         <h3>Bem vindos</h3>
         <aside id="title">
           <h4>Ondas de</h4>
@@ -131,26 +130,120 @@
       </div>
     </section>
     <section id="conteudo">
-      <div>
+
         <article id="container-img-1">
-          <img src="assets/conteudo1.svg" />
-          <img src="assets/conteudo2.svg" />
-          <img src="assets/conteudo3.svg" />
+          <img id="conteudo1" src="assets/conteudo1.svg" />
+          <img id="conteudo1" src="assets/conteudo2.svg" />
+          <img id="conteudo1" src="assets/conteudo3.svg" />
         </article>
-      </div>
-      <div>
+      
+      <div id="container-texImagem">
         <aside id="container-texto">
           <h3>Produção de</h3>
           <h3 id="midias">mídias</h3>
           <h3>& conteúdo</h3>
         </aside>
         <article id="container-img-3">
-          <img src="assets/conteudo4.svg" />
-          <img src="assets/conteudo1.svg" />
+          <img id="conteudo2" src="assets/conteudo4.svg" />
+          <img id="conteudo2" src="assets/conteudo1.svg" />
         </article>
       </div>
     </section>
-    <section id="timeCajueiro"></section>
+    <section id="timeCajueiro">
+      <aside><h1>Cajueiros</h1></aside>
+      <div id="container-mid">
+        <div id="container-time">
+          <swiper style="z-index: 0;" [config]="swiperConfig">
+            <ng-template swiperSlide>
+              <div id="container-card">
+                <div id="card" swiper-wrapper>
+                  <div id="card-container-imagem">
+                    <img
+                      id="fotoIndividual"
+                      src="assets/circulo-victoria.png"
+                      alt="Foto de Victoria"
+                    />
+                  </div>
+                  <div id="card-container-texto">
+                    <h2>Victoria</h2>
+                    <h3>
+                      Cofundadora da Ajú, diretora de planejamento e conteúdo
+                      estratégico
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div id="container-card">
+                <div id="card" swiper-wrapper>
+                  <div id="card-container-imagem">
+                    <img
+                      id="fotoIndividual"
+                      src="assets/circulo-everton.png"
+                      alt="Foto de Everton"
+                    />
+                  </div>
+                  <div id="card-container-texto">
+                    <h2>Everton</h2>
+                    <h3>Design e criador de indentidade visual</h3>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div id="container-card">
+                <div id="card" swiper-wrapper>
+                  <div id="card-container-imagem">
+                    <img
+                      id="fotoIndividual"
+                      src="assets/circulo-sarah.png"
+                      alt="Foto de Sarah"
+                    />
+                  </div>
+                  <div id="card-container-texto">
+                    <h2>Sarah</h2>
+                    <h3>
+                      Cofundadora da Ajú, produtora e diretora fotográfica
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div id="container-card">
+                <div id="card" swiper-wrapper>
+                  <div id="card-container-imagem">
+                    <img
+                      id="fotoIndividual"
+                      src="assets/circulo-gabriel.png"
+                      alt="Foto de Gabriel"
+                    />
+                  </div>
+                  <div id="card-container-texto">
+                    <h2>Gabriel</h2>
+                    <h3>Gestor de Tráfego</h3>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </swiper>
+        </div>
+        <aside id="container-bio">
+          <h4>1. equipe da AJÚ</h4>
+          <h4>
+            2. jovens movidos pela energia da criativade<span id="fontFuzzy"
+              >nordestina</span
+            >
+            e brasileira
+          </h4>
+          <div id="desliza-direita">
+            <img id="img-desliza" src="assets/desliza-direita.png" />
+            <h3>Delize para conhecer os integrantes</h3>
+          </div>
+        </aside>
+      </div>
+    </section>
     <section id="contato">
       <aside><h1>Contatos</h1></aside>
       <div id="linha">
@@ -168,7 +261,6 @@
             />
           </a>
           <a
-            link
             href="mailto:contatoajuestudio@gmail.com?subject=Gostaria%20de%20fazer%20um%20orçamento"
           >
             <img

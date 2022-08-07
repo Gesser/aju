@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swiper, { SwiperOptions, Pagination, Autoplay} from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+public swiperConfig: SwiperOptions = {
+  pagination: true,
+  autoplay:true,
+  freeMode:true,
+
+}
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    Swiper.use([Pagination]);
+    Swiper.use([Autoplay]);
   }
 
 }
