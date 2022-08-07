@@ -10,7 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
-
+import { SwiperModule } from 'swiper/angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     MatDividerModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
